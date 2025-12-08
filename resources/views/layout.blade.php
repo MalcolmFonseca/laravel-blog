@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/app.css" />
+
+    <title>Malcolm Fonseca</title>
+</head>
+
+<body>
+    <div id="root">
+        <div id="miniWebContainer">
+            @yield('content')
+        </div>
+    </div>
+</body>
+
+</html>
