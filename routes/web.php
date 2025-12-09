@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::get('/blog', function () {
     return view('posts', [
-        'posts' => POST::all()
+        'posts' => POST::with('category')->get()
     ]);
 });
 
