@@ -3,7 +3,8 @@
 @section('content')
 
 @foreach ($posts as $post)
-<a href="/posts/<?= $post->id; ?>"><?= $post->title; ?></a>
+<a href="/posts/<?= $post->slug; ?>"><?= $post->title; ?></a>
+<a href="/categories/<?= $post->category->slug; ?>"><?= $post->category->name; ?></a>
 <div><?= $post->excerpt ?></div>
 @endforeach
 
