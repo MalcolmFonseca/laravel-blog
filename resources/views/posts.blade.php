@@ -1,12 +1,15 @@
 @extends('layout')
 
 @section('content')
-
+<h1 id="PageTitle">Projects</h1>
+@if ($posts->count())
+<ul id="PostList">
 @foreach ($posts as $post)
-<a href="/posts/<?= $post->slug; ?>"><?= $post->title; ?></a>
-By: <a href="/users/<?= $post->user->username; ?>"><?= $post->user->name ?></a>
-in <a href="/categories/<?= $post->category->slug; ?>"><?= $post->category->name; ?></a>
-<div><?= $post->excerpt ?></div>
+<x-post-card :post=$post/>
 @endforeach
+</ul>
+@else
+<p>No posts yet...</p>
+@endif
 
 @endsection

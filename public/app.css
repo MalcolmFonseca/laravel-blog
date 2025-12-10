@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  background-image: url("/PortfoiloBackground.png");
+  background-image: url("Images/PortfoiloBackground.png");
   background-attachment: fixed;
   display: flex;
 }

@@ -8,14 +8,19 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/app.css" />
+    <link rel="stylesheet" type="text/css" href="/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="/post.css" />
 
     <title>Malcolm Fonseca</title>
 </head>
 
 <body>
     <div id="root">
-        <div id="miniWebContainer">
-            @yield('content')
+        <div>
+            <x-navbar></x-navbar>
+            <div id="miniWebContainer">
+                @yield('content')
+            </div>
         </div>
     </div>
 </body>

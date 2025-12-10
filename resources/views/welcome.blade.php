@@ -9,16 +9,16 @@
         <h3 id="Location">Strathroy, Ontario, Canada</h3>
         <div id="Socials">
             <a href="https://www.linkedin.com/in/malcolmfonseca" target="_blank">
-                <img width="30px"></img>
+                <img width="30px" src="/Images/LinkedIn.png"></img>
             </a>
             <a href="https://github.com/MalcolmFonseca" target="_blank">
-                <img width="30px"></img>
+                <img width="30px" src="/Images/Github.svg"></img>
             </a>
         </div>
     </div>
     <div id="About">
         <p id="Bio">
-            Hi! I’m Malcolm Fonseca, a recent Software Engineering graduate from
+            Hi! I’m Malcolm Fonseca, a Software Engineering graduate from
             Western University with hands-on project experience across web, game,
             and medical software development.
         </p>
@@ -27,32 +27,44 @@
             <div id="TechnologiesLists">
                 <div>
                     <ul>
-                        <li id="TechListTitle">Web Dev</li>
+                        <li id="TechListTitle">Languages</li>
+                        <li>Javascript</li>
                         <li>Typescript</li>
-                        <li>ReactJS</li>
-                        <li>NodeJS</li>
-                        <li>ExpressJS</li>
-                        <li>SQLite</li>
-                        <li>Vercel</li>
+                        <li>PHP</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li id="TechListTitle">Game Dev</li>
-                        <li>C#</li>
-                        <li>Unity</li>
-                        <li>Aseprite</li>
-                        <li>FL Studio</li>
+                        <li id="TechListTitle">Web Dev</li>
+                        <li>React JS</li>
+                        <li>Laravel</li>
+                        <li>HTML + CSS</li>
+                        <li>Node JS</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li id="TechListTitle">Database</li>
+                        <li>SQL</li>
+                        <li>MongoDB</li>
+                        <li>MariaDB</li>
+                        <li>SQLite</li>
+                        <li>Firebase</li>
                     </ul>
                 </div>
                 <div>
                     <ul>
                         <li id="TechListTitle">Other Tech</li>
-                        <li>Linux</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Git</li>
+                        <li>Linux (Arch btw)</li>
+                        <li>AWS</li>
+                        <li>GCP</li>
+                        <li>Godot</li>
+                        <li>Unity</li>
                         <li>Hololens AR</li>
                     </ul>
                 </div>
