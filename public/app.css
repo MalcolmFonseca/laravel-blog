@@ -19,6 +19,10 @@ p {
   font-size: 22px;
 }
 
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
 #miniWebContainer {
   position: fixed;
   top: 50%;
@@ -103,4 +107,39 @@ p {
   justify-content: center;
   align-items: center;
   gap: 5%;
+}
+
+@media (max-width: 1400px) {
+  #About {
+    margin-top: 5%;
+    flex-direction: column;
+  }
+
+  #Bio {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.Dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  background-color: white;
+  width: 146px;
+  border-radius: 20px;
+}
+
+.Dropdown a {
+  text-decoration: none;
+  color: black;
+  padding: 2%;
+  padding-left: 10%;
+}
+
+.Dropdown a:hover {
+  background-color: #9259b4;
+  border-radius: 20px;
+  color: white;
 }
