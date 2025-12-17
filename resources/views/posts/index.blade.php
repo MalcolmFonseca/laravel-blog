@@ -6,6 +6,9 @@
         <h1 id="PageTitle">My Blog</h1>
         <div id="PostFilters">
             <form method="GET" action="#" id="PostSearch">
+                @if (request('category'))
+                    <input type="hidden" name="category" value="{{ request('category') }}"></input>
+                @endif
                 <input type="text" name="search" placeholder="Search" value="{{ request('search') }}" />
             </form>
             <div id="PostCategory">
@@ -19,6 +22,7 @@
                 <x-post-card :post=$post />
             @endforeach
         </ul>
+        {{ $posts->links() }}
     @else
         <p>No posts yet...</p>
     @endif
