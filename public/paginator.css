@@ -1,0 +1,25 @@
+.idk {
+    color: red;
+}
+
+.Links {
+    display: flex;
+    flex-direction: row;
+}
+
+.Arrow {
+    text-decoration: none;
+}
+
+.Arrow p {
+    text-align: center;
+    margin: 0;
+    background-color: #9259b4;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}
+
+.Arrow :hover{
+    background-color: #ce7eff;
+}
