@@ -7,4 +7,7 @@
         <p><?= $post->body ?></p>
     </div>
     <a href="/blog">Go Back</a>
+    @foreach ($post->comments as $comment)
+        <x-post-comment :comment="$comment" />
+    @endforeach
 @endsection

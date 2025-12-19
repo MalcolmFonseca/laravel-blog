@@ -82,3 +82,30 @@
     padding: 15px;
     color: white;
 }
+
+.Comment {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: #9259b4;
+    border-radius: 25px;
+    width: 60%;
+    padding: 1%;
+}
+
+.Comment header {
+    margin-left: 15px;
+}
+
+.CommentTime {
+    font-size: 16px;
+    margin: 0;
+}
+
+.CommentContents {
+    font-size: 16px;
+}
+
+.CommentAuthor {
+    margin: 0;
+}
