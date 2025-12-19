@@ -1,25 +1,41 @@
-.idk {
-    color: red;
-}
-
 .Links {
     display: flex;
     flex-direction: row;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.Arrow {
-    text-decoration: none;
+.PaginationShowing {
+    background-color: #9259b4;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 15px;
 }
 
-.Arrow p {
+.Pages {
+    background-color: #9259b4;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.Arrow button {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border: none;
     text-align: center;
     margin: 0;
     background-color: #9259b4;
-    width: 22px;
-    height: 22px;
-    border-radius: 100%;
+    padding: 10px;
+    border-radius: 12px;
 }
 
-.Arrow :hover{
+.Arrow button:hover {
     background-color: #ce7eff;
+}
+
+.Arrow button:hover:disabled {
+    background-color: #9259b4;
 }

@@ -3,7 +3,7 @@
         <div>
 
             <div>
-                <p>
+                <p class="PaginationShowing">
                     {!! __('Showing') !!}
                     @if ($paginator->firstItem())
                         <span>{{ $paginator->firstItem() }}</span>
@@ -25,52 +25,54 @@
                     @if ($paginator->onFirstPage())
                         <span aria-disabled="true" aria-label="{{ __('pagination.previous') }}" class="Arrow">
                             <span aria-hidden="true">
-                                <p>{{ '<' }}</p>
+                                <button disabled>{{ '<' }}</button>
                             </span>
                         </span>
                     @else
                         <a href="{{ $paginator->previousPageUrl() }}" rel="prev"
                             aria-label="{{ __('pagination.previous') }}" class="Arrow">
-                            <p>{{ '<' }}</p>
+                            <button>{{ '<' }}</button>
                         </a>
                     @endif
 
                     {{-- Pagination Elements --}}
-                    @foreach ($elements as $element)
-                        {{-- "Three Dots" Separator --}}
-                        @if (is_string($element))
-                            <span aria-disabled="true">
-                                <span>{{ $element }}</span>
-                            </span>
-                        @endif
+                    <div class="Pages">
+                        @foreach ($elements as $element)
+                            {{-- "Three Dots" Separator --}}
+                            @if (is_string($element))
+                                <span aria-disabled="true">
+                                    <span>{{ $element }}</span>
+                                </span>
+                            @endif
 
-                        {{-- Array Of Links --}}
-                        @if (is_array($element))
-                            @foreach ($element as $page => $url)
-                                @if ($page == $paginator->currentPage())
-                                    <span aria-current="page">
-                                        <span>{{ $page }}</span>
-                                    </span>
-                                @else
-                                    <a href="{{ $url }}"
-                                        aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
-                                        {{ $page }}
-                                    </a>
-                                @endif
-                            @endforeach
-                        @endif
-                    @endforeach
+                            {{-- Array Of Links --}}
+                            @if (is_array($element))
+                                @foreach ($element as $page => $url)
+                                    @if ($page == $paginator->currentPage())
+                                        <span aria-current="page">
+                                            <span>{{ $page }}</span>
+                                        </span>
+                                    @else
+                                        <a href="{{ $url }}"
+                                            aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
+                                            {{ $page }}
+                                        </a>
+                                    @endif
+                                @endforeach
+                            @endif
+                        @endforeach
+                    </div>
 
                     {{-- Next Page Link --}}
                     @if ($paginator->hasMorePages())
                         <a href="{{ $paginator->nextPageUrl() }}" rel="next"
                             aria-label="{{ __('pagination.next') }}" class="Arrow">
-                            <p>{{ '>' }}</p>
+                            <button>{{ '>' }}</button>
                         </a>
                     @else
                         <span aria-disabled="true" aria-label="{{ __('pagination.next') }}" class="Arrow">
                             <span aria-hidden="true">
-                                <p>{{ '>' }}</p>
+                                <button disabled>{{ '>' }}</button>
                             </span>
                         </span>
                     @endif
