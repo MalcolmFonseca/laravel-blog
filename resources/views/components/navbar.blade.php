@@ -13,5 +13,20 @@
         <li>
             <a href="/blog">Blog</a>
         </li>
+        @auth
+            <li>
+                <form action="/logout" method="post">
+                    @csrf
+                    <button type="submit">Log Out</button>
+                </form>
+            </li>
+        @else
+            <li>
+                <a href="/register">Sign Up</a>
+            </li>
+            <li>
+                <a href="/login">Log In</a>
+            </li>
+        @endauth
     </ul>
 </nav>
