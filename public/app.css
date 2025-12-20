@@ -23,6 +23,14 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
+.PageTitle {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: white;
+}
+
 #miniWebContainer {
   position: fixed;
   top: 50%;
@@ -38,7 +46,7 @@ button {
   border-radius: 0px 0px 20px 20px;
 }
 
-#Location {
+.PageSubtitle {
   text-align: center;
   margin: 0;
 }
@@ -125,9 +133,8 @@ button {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 80px;
   background-color: white;
-  width: 146px;
+  width: 175px;
   border-radius: 20px;
 }
 
@@ -142,4 +149,16 @@ button {
   background-color: #9259b4;
   border-radius: 20px;
   color: white;
+}
+
+.BackButton a{
+  color: white;
+  text-decoration: none;
+  background-color: #9259b4;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.BackButton a:hover{
+  background-color: #ce7eff;
 }

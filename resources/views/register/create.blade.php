@@ -2,8 +2,8 @@
 
 @section('content')
     <main>
-        <h1>Register</h1>
-        <form method="POST" action="/register" id="RegisterForm">
+        <h1 class="PageTitle">Register</h1>
+        <form method="POST" action="/register" id="SessionForm">
             @csrf
 
             <div>

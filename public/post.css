@@ -1,10 +1,3 @@
-#PageTitle {
-    text-align: center;
-    margin-top: 1%;
-    font-size: 2.5rem;
-    color: white;
-}
-
 #PostList {
     width: 100%;
     margin: 0;
@@ -40,7 +33,7 @@
     background-color: #9259b4;
     border-radius: 25px;
     width: fit-content;
-    padding: 1%;
+    padding: 15px;
     margin: 0;
 }
 
@@ -55,7 +48,6 @@
     justify-content: space-between;
     margin-left: 15px;
     margin-right: 15px;
-    margin-top: 1%;
 }
 
 #PostCategory button {
@@ -91,6 +83,11 @@
     color: red;
 }
 
+.PostBody {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .Comment {
     display: flex;
     margin-top: 25px;
@@ -99,6 +96,10 @@
     border-radius: 25px;
     width: 60%;
     padding: 1%;
+}
+
+.Comment img {
+    border-radius: 15px;
 }
 
 .Comment header {
@@ -117,3 +118,27 @@
 .CommentAuthor {
     margin: 0;
 }
+
+.CreateComment {
+    flex-direction: column;
+}
+
+.CreateComment div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.CreateComment textarea {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+.Comment a {
+    color: white;
+}
+
+.CreateComment button {}

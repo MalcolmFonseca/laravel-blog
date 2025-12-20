@@ -4,8 +4,8 @@
     <div id="LandingPageContent">
         <div>
             <h1 id="LandingPageName">Malcolm Fonseca</h1>
-            <h3 id="Location">Software Engineer</h3>
-            <h3 id="Location">Strathroy, Ontario, Canada</h3>
+            <h3 class="PageSubtitle">Software Engineer</h3>
+            <h3 class="PageSubtitle">Strathroy, Ontario, Canada</h3>
             <div id="Socials">
                 <a href="https://www.linkedin.com/in/malcolmfonseca" target="_blank">
                     <img width="30px" src="/Images/LinkedIn.png"></img>

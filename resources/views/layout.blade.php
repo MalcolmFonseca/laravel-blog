@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/navbar.css" />
     <link rel="stylesheet" type="text/css" href="/post.css" />
     <link rel="stylesheet" type="text/css" href="/paginator.css" />
+    <link rel="stylesheet" type="text/css" href="/sessionform.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Malcolm Fonseca</title>
 </head>

@@ -1,9 +1,9 @@
 @extends('layout')
 
 @section('content')
+    <h1 class="PageTitle">My Blog</h1>
     <div id="BlogTitleBar">
-        <p id="SubscribeButton">Subscribe for Updates</p>
-        <h1 id="PageTitle">My Blog</h1>
+        <p id="SubscribeButton">Subscribe</p>
         <div id="PostFilters">
             <form method="GET" action="#" id="PostSearch">
                 @if (request('category'))

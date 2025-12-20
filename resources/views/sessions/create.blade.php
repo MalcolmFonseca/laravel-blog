@@ -2,8 +2,8 @@
 
 @section('content')
     <main>
-        <h1>Log In</h1>
-        <form method="POST" action="/login" id="RegisterForm">
+        <h1 class="PageTitle">Log In</h1>
+        <form method="POST" action="/login" id="SessionForm">
             @csrf
             <div>
                 <label for="email">Email</label>
