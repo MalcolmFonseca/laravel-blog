@@ -162,3 +162,13 @@ button {
 .BackButton a:hover{
   background-color: #ce7eff;
 }
+
+.SmallContent {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.SmallContent .PageTitle {
+  margin-top: 0;
+}

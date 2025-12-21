@@ -1,8 +1,49 @@
 #SessionForm {
     background-color: #9259b4;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+    padding-top: 0;
+    margin: auto;
+    font-size: 22px;
 }
 
 #SessionForm input {
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.SubmitButton {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 22px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.SubmitButton:hover {
+    background-color: #ce7eff;
+}
+
+.Column {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+#SessionForm label {
+    margin-top: 15px;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
