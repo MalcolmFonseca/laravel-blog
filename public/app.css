@@ -5,6 +5,8 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -149,6 +151,10 @@ button {
   background-color: #9259b4;
   border-radius: 20px;
   color: white;
+}
+
+.BackButton {
+  margin-top: 30px;
 }
 
 .BackButton a{

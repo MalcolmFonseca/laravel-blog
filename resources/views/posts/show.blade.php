@@ -13,10 +13,10 @@
                 @csrf
                 <div>
                     <img src="https://i.pravatar.cc/50" alt="">
-                    <header>Leave a Comment:</header>
+                    <p>Leave a Comment:</p>
                 </div>
                 <div>
-                    <textarea name="body" cols="30" rows="5" placeholder="Comment Body Here" required></textarea>
+                    <textarea name="body" cols="30" rows="3" placeholder="" required></textarea>
                     @error('body')
                         <span>{{ $message }}</span>
                     @enderror
