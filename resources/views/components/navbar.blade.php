@@ -1,6 +1,6 @@
 <nav id="nav">
     <a href="/">
-        <img src=/Images/Logo.png id="navlogo"></img>
+        <img src=/Images/Logo.png id="navlogo" alt=""></img>
         <h1 id="Name">Malcolm Fonseca</h1>
     </a>
     <ul id="navlinks">

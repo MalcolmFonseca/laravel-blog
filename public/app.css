@@ -1,12 +1,8 @@
-#root {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-}
-
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth !important;
+  color: #ffffff;
 }
 
 body {
@@ -19,10 +15,6 @@ body {
 p {
   margin-left: 15px;
   font-size: 22px;
-}
-
-button {
-  font-family: "Montserrat", sans-serif;
 }
 
 .PageTitle {
@@ -71,37 +63,6 @@ button {
   text-align: left;
   width: 40%;
   margin-left: 0;
-}
-
-#TechHeader {
-  margin-bottom: 0;
-  text-align: center;
-}
-
-#Technologies {
-  width: 40%;
-}
-
-#TechnologiesLists {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-}
-
-#TechnologiesLists ul {
-  margin-top: 0;
-  padding-left: 0;
-}
-
-#TechListTitle {
-  margin-bottom: 0;
-  margin-top: 0;
-  text-align: left;
-  list-style-type: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  white-space: nowrap;
-  text-decoration: underline;
 }
 
 #LandingPageContent {
@@ -160,9 +121,6 @@ button {
 .BackButton a{
   color: white;
   text-decoration: none;
-  background-color: #9259b4;
-  padding: 15px;
-  border-radius: 25px;
 }
 
 .BackButton a:hover{
@@ -177,4 +135,10 @@ button {
 
 .SmallContent .PageTitle {
   margin-top: 0;
+}
+
+.Container {
+  background-color: #9259b4;
+  padding: 15px;
+  border-radius: 25px;
 }

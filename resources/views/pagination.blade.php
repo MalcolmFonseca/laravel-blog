@@ -3,7 +3,7 @@
         <div>
 
             <div>
-                <p class="PaginationShowing">
+                <p class="PaginationShowing Container">
                     {!! __('Showing') !!}
                     @if ($paginator->firstItem())
                         <span>{{ $paginator->firstItem() }}</span>

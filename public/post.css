@@ -5,7 +5,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 32rem);
+    grid-template-rows: repeat(2, fit-content);
     justify-items: center;
 }
 
@@ -13,11 +13,13 @@
     color: white;
     text-align: center;
     width: 95%;
-    height: 30rem;
-    padding-bottom: 1%;
+    height: fit-content;
     display: inline-block;
-    background-color: #9259b4;
-    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.Post h2 {
+    margin-top: 0;
 }
 
 .Post:hover {
@@ -29,12 +31,24 @@
     color: white;
 }
 
-#SubscribeButton {
-    background-color: #9259b4;
+.Post img {
+    width: 100%;
     border-radius: 25px;
-    width: fit-content;
-    padding: 15px;
+}
+
+.PostInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.PostInfo p {
     margin: 0;
+}
+
+#SubscribeButton {
+    width: fit-content;
+    margin: 0;
+    text-align: center;
 }
 
 #SubscribeButton a {
@@ -58,9 +72,6 @@
 #PostCategory button {
     border: none;
     color: white;
-    background-color: #9259b4;
-    border-radius: 25px;
-    padding: 15px;
     font-size: 22px;
     width: 175px;
 }
@@ -76,12 +87,8 @@
 
 #PostSearch input {
     font-size: 22px;
-    background-color: #9259b4;
     border: none;
-    border-radius: 25px;
-    padding: 15px;
     color: white;
-    width: 335px;
 }
 
 .PostBody {
@@ -93,10 +100,8 @@
     display: flex;
     margin-top: 25px;
     margin-left: 25px;
-    background-color: #9259b4;
     border-radius: 25px;
     width: 60%;
-    padding: 1%;
 }
 
 .Comment img {
@@ -156,11 +161,7 @@
 }
 
 #newsletter {
-    background-color: #9259b4;
-    width: 80%;
-    border-radius: 25px;
-    padding: 15px;
-    padding-top: 0;
+    width: fit-content;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -174,4 +175,16 @@
     border-radius: 15px;
     padding: 10px;
     color: white;
+    width: 100%;
+}
+
+#newsletter div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#newsletter h2 {
+    text-align: center;
+    margin-top: 0;
 }

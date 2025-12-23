@@ -16,12 +16,10 @@
 </head>
 
 <body>
-    <div id="root">
-        <div>
-            <x-navbar></x-navbar>
-            <div id="miniWebContainer">
-                @yield('content')
-            </div>
+    <div>
+        <x-navbar></x-navbar>
+        <div id="miniWebContainer">
+            @yield('content')
         </div>
     </div>
 

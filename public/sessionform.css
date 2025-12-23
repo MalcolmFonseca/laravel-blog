@@ -1,15 +1,12 @@
 #SessionForm {
-    background-color: #9259b4;
     width: 100%;
-    border-radius: 25px;
-    padding: 15px;
     padding-top: 0;
     margin: auto;
     font-size: 22px;
 }
 
 #SessionForm input {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #663e7e;
     border: none;
     font-size: 22px;
     border-radius: 15px;
@@ -20,7 +17,7 @@
 .SubmitButton {
     border: none;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #663e7e;
     border-radius: 25px;
     padding: 15px;
     font-size: 22px;

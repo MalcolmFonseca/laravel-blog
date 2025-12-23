@@ -1,9 +1,12 @@
 @props(['post'])
 
-<li class="Post">
+<li class="Post Container">
     <h2 class="PostTitle"><a href="/posts/<?= $post->slug ?>"><?= $post->title ?></a></h2>
-    By: <a href="/blog/?user=<?= $post->user->username ?>"><?= $post->user->name ?></a>
-    in <a href="/blog/?category=<?= $post->category->slug ?>"><?= $post->category->name ?></a>
-    <div><?= $post->created_at->diffForHumans() ?></div>
+    <img src="https://placehold.net/7-800x600.png" />
+    <div class="PostInfo">
+        <p><a href="/blog/?user=<?= $post->user->username ?>"><?= 'By: ' . $post->user->name ?></a></p>
+        <p><?= $post->created_at->diffForHumans() ?></p>
+        <p><a href="/blog/?category=<?= $post->category->slug ?>"><?= ucfirst($post->category->name) ?></a></p>
+    </div>
     <div><?= $post->excerpt ?></div>
 </li>

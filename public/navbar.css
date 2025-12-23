@@ -38,6 +38,10 @@
     background-color: #985bba;
 }
 
+#nav button:hover {
+    background-color: #985bba;
+}
+
 #navlogo {
     width: 100px;
 }
@@ -61,8 +65,4 @@
     font-size: 1.5rem;
     background-color: #1c1c20;
     border: none;
-}
-
-#nav button:hover {
-    background-color: #985bba;
 }

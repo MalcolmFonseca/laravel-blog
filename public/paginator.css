@@ -8,10 +8,7 @@
 }
 
 .PaginationShowing {
-    background-color: #9259b4;
-    border-radius: 25px;
     width: fit-content;
-    padding: 15px;
 }
 
 .Pages {
@@ -32,10 +29,14 @@
     border-radius: 12px;
 }
 
+.Arrow button:disabled {
+    background-color: #663e7e;
+}
+
 .Arrow button:hover {
     background-color: #ce7eff;
 }
 
 .Arrow button:hover:disabled {
-    background-color: #9259b4;
+    background-color: #663e7e;
 }

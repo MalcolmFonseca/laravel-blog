@@ -1,7 +1,7 @@
 @props(['trigger'])
 
 <div x-data="{ show: false }" @click.away="show = false">
-    <button @click="show = !show">{{ $trigger }}</button>
+    <button @click="show = !show" class="Container">{{ $trigger }}</button>
     <div x-show="show" class="Dropdown">
         {{ $slot }}
     </div>

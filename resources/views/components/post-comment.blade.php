@@ -1,6 +1,6 @@
 @props(['comment'])
 
-<article class="Comment">
+<article class="Comment Container">
     <div>
         <img src="https://i.pravatar.cc/50" alt="">
     </div>

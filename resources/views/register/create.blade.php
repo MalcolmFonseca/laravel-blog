@@ -4,7 +4,7 @@
     <main class="SmallContent">
         <div>
             <h1 class="PageTitle">Register</h1>
-            <form method="POST" action="/register" id="SessionForm">
+            <form method="POST" action="/register" id="SessionForm" class="Container">
                 @csrf
                 <div class="Row">
                     <div class="Column">
