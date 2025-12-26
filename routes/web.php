@@ -13,13 +13,16 @@ Route::get('/', function () {
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/posts/{post:slug}', [PostController::class, 'show'])->name('post');
-Route::post('/posts/{post:slug}/comments', [PostCommentsController::class, 'store']);
+Route::post('/posts/{post:slug}/comments', [PostCommentsController::class, 'store'])->middleware('auth');
 
-Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
+Route::get('/register', [RegisterController::class, 'create'])->middleware('guest')->name('register');
 Route::post('/register', [RegisterController::class, 'store'])->middleware('guest');
 
-Route::get('/login', [SessionsController::class, 'create'])->middleware('guest');
+Route::get('/login', [SessionsController::class, 'create'])->middleware('guest')->name('login');
 Route::post('/login', [SessionsController::class, 'store'])->middleware('guest');
 Route::post('/logout', [SessionsController::class, 'destroy'])->middleware('auth');
 
 Route::post('/newsletter', NewsletterController::class);
+
+Route::get('admin/posts/create', [PostController::class, 'create'])->middleware('admin');
+Route::post('admin/posts', [PostController::class, 'store'])->middleware('admin');

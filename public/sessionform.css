@@ -1,11 +1,11 @@
-#SessionForm {
+#Form {
     width: 100%;
     padding-top: 0;
     margin: auto;
     font-size: 22px;
 }
 
-#SessionForm input {
+#Form input {
     background-color: #663e7e;
     border: none;
     font-size: 22px;
@@ -35,7 +35,7 @@
     width: 49%;
 }
 
-#SessionForm label {
+#Form label {
     margin-top: 15px;
 }
 

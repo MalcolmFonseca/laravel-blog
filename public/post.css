@@ -34,6 +34,7 @@
 .Post img {
     width: 100%;
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .PostInfo {
@@ -140,7 +141,6 @@
     border-radius: 15px;
     font-size: 16px;
     resize: none;
-    font-size: 16px;
     padding: 15px;
     border-color: #663e7e;
 }
@@ -187,4 +187,18 @@
 #newsletter h2 {
     text-align: center;
     margin-top: 0;
+}
+
+#CreatePostBody {
+    margin-top: 15px;
+}
+
+#CreatePostBody textarea {
+    color: black;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 22px;
+    resize: none;
+    padding: 10px;
+    border-color: #663e7e;
 }
