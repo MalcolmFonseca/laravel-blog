@@ -17,6 +17,10 @@ p {
   font-size: 22px;
 }
 
+textarea {
+  color: #1c1c20;
+}
+
 .PageTitle {
   text-align: center;
   margin-top: 15px;

@@ -4,6 +4,7 @@
     <h1 class="PageTitle">My Blog</h1>
     <div id="BlogTitleBar">
         <p id="SubscribeButton" class="Container"><a href="#newsletter">Subscribe for Updates</a></p>
+        <p class="Container"><a href="/admin/posts/create">New Post</a></p>
         <div id="PostFilters">
             <form method="GET" action="#" id="PostSearch">
                 @if (request('category'))
@@ -30,13 +31,7 @@
     <form id="newsletter" class="Container" action="/newsletter" method="post">
         @csrf
         <h2>Subscribe to be notified of new posts</h2>
-        <div>
-            <label>Email</label>
-            <input type="email" name="email" id="email">
-        </div>
-        @error('email')
-            <p>{{ $message }}</p>
-        @enderror
+        <x-form.input name='email' type='email' class='' />
         <button type="submit" class="SubmitButton">Subscribe</button>
     </form>
 

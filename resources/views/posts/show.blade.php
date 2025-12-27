@@ -22,12 +22,7 @@
                     <img src="https://i.pravatar.cc/50" alt="">
                     <p>Leave a Comment:</p>
                 </div>
-                <div>
-                    <textarea name="body" cols="30" rows="3" placeholder="" required></textarea>
-                    @error('body')
-                        <span>{{ $message }}</span>
-                    @enderror
-                </div>
+                <x-form.textarea name="body" rows="3" />
                 <div>
                     <button type="submit">Post</button>
                 </div>
