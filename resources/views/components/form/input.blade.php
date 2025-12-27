@@ -1,8 +1,7 @@
-@props(['name', 'type' => 'text', 'class' => 'Column'])
+@props(['name', 'class' => 'Column'])
 
 <div class="{{ $class }}">
     <x-form.label name='{{ $name }}' />
-    <input type="{{ $type }}" name="{{ $name }}" id="{{ $name }}" required
-        value="{{ old($name) }}">
+    <input name="{{ $name }}" id="{{ $name }}" required {{ $attributes(['value' => old($name)]) }} />
     <x-form.error name="{{ $name }}" />
 </div>

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="PageTitle">Create New Post</h1>
-    <form action="/admin/posts" method="post" id='Form' class="Container" enctype="multipart/form-data">
+    <form action="/admin/posts" method="POST" id='Form' class="Container" enctype="multipart/form-data">
         @csrf
         <div class="Row">
             <x-form.input name='title' />
