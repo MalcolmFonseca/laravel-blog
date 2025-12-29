@@ -3,6 +3,8 @@
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth !important;
   color: #ffffff;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -77,11 +79,11 @@ textarea {
 }
 
 #About {
+  padding: 15px;
   background-color: #9259b4;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 5%;
 }
 
 @media (max-width: 1400px) {
@@ -143,6 +145,12 @@ textarea {
 
 .Container {
   background-color: #9259b4;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.DarkContainer {
+  background-color: #663e7e;
   padding: 15px;
   border-radius: 25px;
 }
