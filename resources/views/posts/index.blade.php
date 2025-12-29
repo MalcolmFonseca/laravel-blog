@@ -3,8 +3,11 @@
 @section('content')
     <h1 class="PageTitle">My Blog</h1>
     <div id="BlogTitleBar">
-        <p id="SubscribeButton" class="Container"><a href="#newsletter">Subscribe for Updates</a></p>
-        <p class="Container"><a href="/admin/posts/create">New Post</a></p>
+        @if (request()->user()?->can('admin'))
+            <p class="Container"><a href="/admin/posts/create">New Post</a></p>
+        @else
+            <p id="SubscribeButton" class="Container"><a href="#newsletter">Subscribe for Updates</a></p>
+        @endif
         <div id="PostFilters">
             <form method="GET" action="#" id="PostSearch">
                 @if (request('category'))
