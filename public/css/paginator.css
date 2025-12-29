@@ -9,12 +9,20 @@
 
 .PaginationShowing {
     width: fit-content;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .Pages {
     background-color: #9259b4;
     padding: 5px;
     border-radius: 12px;
+}
+
+.SelectedPage {
+    background-color: #663e7e;
+    border-radius: 12px;
+    padding: 5px;
 }
 
 .Arrow button {

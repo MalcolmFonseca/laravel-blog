@@ -204,4 +204,27 @@
 }
 
 .FeaturedPost {
+    display: flex;
+    width: 40%;
+    text-align: center;
+}
+
+.FeaturedPost h2 {
+    margin: 0;
+}
+
+.FeaturedPost img {
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.FeaturedPostInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FeaturedPostInfo p {
+    margin: 0;
+    text-align: center;
 }

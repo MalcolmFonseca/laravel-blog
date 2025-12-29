@@ -50,7 +50,7 @@
                                 @foreach ($element as $page => $url)
                                     @if ($page == $paginator->currentPage())
                                         <span aria-current="page">
-                                            <span>{{ $page }}</span>
+                                            <span class="SelectedPage">{{ $page }}</span>
                                         </span>
                                     @else
                                         <a href="{{ $url }}"
