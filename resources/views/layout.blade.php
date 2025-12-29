@@ -6,11 +6,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="/app.css" />
-    <link rel="stylesheet" type="text/css" href="/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="/post.css" />
-    <link rel="stylesheet" type="text/css" href="/paginator.css" />
-    <link rel="stylesheet" type="text/css" href="/sessionform.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/paginator.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/post.css') }}" />
+    <link rel="stylesheet" type="text/css" href="/{{ asset('css/sessionform.css') }}" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Malcolm Fonseca</title>
 </head>
