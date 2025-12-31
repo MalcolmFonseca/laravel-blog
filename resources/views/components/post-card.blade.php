@@ -13,4 +13,14 @@
         <p><a href="/blog/?category=<?= $post->category->slug ?>"><?= ucfirst($post->category->name) ?></a></p>
     </div>
     <div><?= $post->excerpt ?></div>
+    @if (request()->user()?->can('admin'))
+        <div class="">
+            <a href="/admin/posts/{{ $post->id }}">Edit</a>
+            <form action="/admin/posts/{{ $post->id }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+    @endif
 </li>

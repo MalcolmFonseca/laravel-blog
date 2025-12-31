@@ -17,10 +17,12 @@ body {
 p {
   margin-left: 15px;
   font-size: 22px;
+  width: fit-content;
 }
 
 textarea {
-  color: #1c1c20;
+  background-color: #663e7e;
+  border: none;
 }
 
 .PageTitle {
@@ -95,6 +97,10 @@ textarea {
   #Bio {
     text-align: center;
     width: 80%;
+  }
+
+  .FeaturedPost {
+    width: 100%;
   }
 }
 

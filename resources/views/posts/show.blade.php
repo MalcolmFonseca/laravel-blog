@@ -6,7 +6,7 @@
         <h1 class="PageTitle"><?= $post->title ?></h1>
         <h2 class="PageSubtitle">By <?= $post->user->name ?> in <?= $post->category->name ?></h2>
         <div class="Row">
-            <div class="Column">
+            <div class="Column Container PostImage">
                 <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="">
             </div>
             <div class="Column">

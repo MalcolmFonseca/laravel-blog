@@ -31,11 +31,12 @@
     @else
         <p>No posts yet...</p>
     @endif
-    <form id="newsletter" class="Container" action="/newsletter" method="post">
-        @csrf
-        <h2>Subscribe to be notified of new posts</h2>
-        <x-form.input name='email' type='email' class='' />
-        <button type="submit" class="SubmitButton">Subscribe</button>
-    </form>
-
+    @if (!request()->user()?->can('admin'))
+        <form id="newsletter" class="Container" action="/newsletter" method="post">
+            @csrf
+            <h2>Subscribe to be notified of new posts</h2>
+            <x-form.input name='email' type='email' class='' />
+            <button type="submit" class="SubmitButton">Subscribe</button>
+        </form>
+    @endif
 @endsection

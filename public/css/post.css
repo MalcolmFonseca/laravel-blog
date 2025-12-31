@@ -9,6 +9,10 @@
     justify-items: center;
 }
 
+#PostList .Container {
+    width: 95%;
+}
+
 .Post {
     color: white;
     text-align: center;
@@ -200,12 +204,10 @@
     font-size: 22px;
     resize: none;
     padding: 10px;
-    border-color: #663e7e;
 }
 
 .FeaturedPost {
     display: flex;
-    width: 40%;
     text-align: center;
 }
 
@@ -227,4 +229,9 @@
 .FeaturedPostInfo p {
     margin: 0;
     text-align: center;
+}
+
+.PostImage {
+    margin-top: 25px;
+    margin-left: 25px;
 }
