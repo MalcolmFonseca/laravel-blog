@@ -9,7 +9,7 @@
             <x-form.input name='excerpt' />
         </div>
 
-        <div id="CreatePostBody">
+        <div class="FormTextArea">
             <x-form.textarea name='body' rows="15" />
         </div>
 

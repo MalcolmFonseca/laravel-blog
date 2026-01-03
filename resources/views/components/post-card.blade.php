@@ -9,17 +9,17 @@
     @endif
     <div class="PostInfo">
         <p><a href="/blog/?user=<?= $post->user->username ?>"><?= 'By: ' . $post->user->name ?></a></p>
-        <p><?= $post->created_at->diffForHumans() ?></p>
         <p><a href="/blog/?category=<?= $post->category->slug ?>"><?= ucfirst($post->category->name) ?></a></p>
+        <p><?= $post->created_at->diffForHumans() ?></p>
     </div>
     <div><?= $post->excerpt ?></div>
     @if (request()->user()?->can('admin'))
-        <div class="">
-            <a href="/admin/posts/{{ $post->id }}">Edit</a>
+        <div class="AdminTools">
+            <a href="/admin/posts/{{ $post->id }}" class="DarkContainer">Edit</a>
             <form action="/admin/posts/{{ $post->id }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button type="submit">Delete</button>
+                <button type="submit" class="DarkContainer">Delete</button>
             </form>
         </div>
     @endif
