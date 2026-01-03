@@ -24,6 +24,7 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
+        "APP_STORAGE":"/tmp",
         "SESSION_DRIVER": "cookie"
     }
 }
