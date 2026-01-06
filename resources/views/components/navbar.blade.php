@@ -8,10 +8,10 @@
             <a href="/projects">Projects</a>
         </li>
         <li>
-            <a href="/contact">Contact</a>
+            <a href="/blog">Blog</a>
         </li>
         <li>
-            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
         </li>
         @auth
             <li>

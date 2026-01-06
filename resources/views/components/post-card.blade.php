@@ -1,7 +1,9 @@
 @props(['post'])
 
 <li class="Post Container">
-    <h2 class="PostTitle"><a href="/posts/<?= $post->slug ?>"><?= $post->title ?></a></h2>
+    <div class="PostTitle">
+        <h2><a href="/posts/<?= $post->slug ?>"><?= $post->title ?></a></h2>
+    </div>
     @if ($post->thumbnail)
         <img src="{{ asset('storage/' . $post->thumbnail) }}" width="800" height="600" />
     @else

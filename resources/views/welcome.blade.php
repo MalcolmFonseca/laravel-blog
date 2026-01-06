@@ -21,7 +21,9 @@
                 Western University with hands-on project experience across web, game,
                 and medical software development.
             </p>
-            <x-featured-post-card :post=$post />
+            @if (isset($post))
+                <x-featured-post-card :post=$post />
+            @endif
         </div>
     </div>
 @endsection
