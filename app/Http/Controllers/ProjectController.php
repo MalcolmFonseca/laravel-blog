@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -10,7 +10,7 @@ class ProjectController extends Controller
     public function index()
     {
         return view('projects.index', [
-            'posts' => Post::latest()->filter(['category' => 'project', ...request(['search', 'category', 'user'])])->paginate(6)->withQueryString(),
+            'projects' => Project::latest()->filter(request(['search']))->paginate(6)->withQueryString(),
         ]);
     }
 }

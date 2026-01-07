@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Comment;
+use App\Models\Project;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -18,6 +19,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Post::factory(10)->create();
+        Project::factory(10)->create();
     }
 }
