@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Project::factory(10)->create();
+        Post::factory(10)->create();
     }
 }

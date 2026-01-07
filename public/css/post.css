@@ -24,6 +24,7 @@
 
 .Post h2 {
     margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .Post a {
@@ -40,6 +41,7 @@
 .PostInfo {
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -222,6 +224,13 @@
 .PostImage {
     margin-top: 15px;
     margin-left: 25px;
+    width: 35%;
+}
+
+.PostImage img{
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
 .AdminTools {

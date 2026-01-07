@@ -5,14 +5,14 @@
     <div>
         <h1 class="PageTitle"><?= $post->title ?></h1>
         <h2 class="PageSubtitle">By <?= $post->user->name ?> in <?= $post->category->name ?></h2>
-        <div class="Row">
-            <div class="Column Container PostImage">
-                <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="">
-            </div>
-            <div class="Column">
-                <p class="PostBody"><?= $post->body ?></p>
-            </div>
+        <div class="Container PostImage">
+            @if ($post->thumbnail)
+                <img src="{{ asset('storage/' . $post->thumbnail) }}" />
+            @else
+                <img src="https://placehold.net/600x400.png" />
+            @endif
         </div>
+        <p class="PostBody"><?= $post->body ?></p>
     </div>
     <div>
         @auth

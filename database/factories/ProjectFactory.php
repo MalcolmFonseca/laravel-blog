@@ -21,7 +21,16 @@ class ProjectFactory extends Factory
             'slug' => fake()->slug(),
             'body' => fake()->paragraph(),
             'technologies' => [fake()->word(), fake()->word()],
-            'links' => [fake()->domainName(), fake()->domainName()],
+            'links' => [
+                [
+                    'name' => 'Play',
+                    'ref' => fake()->domainName()
+                ],
+                [
+                    'name' => 'Source',
+                    'ref' => fake()->domainName()
+                ]
+            ],
         ];
     }
 }
