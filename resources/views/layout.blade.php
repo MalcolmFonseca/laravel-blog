@@ -25,7 +25,7 @@
     </div>
 
     @if (session()->has('success'))
-        <div x-data="{ show: true }" x-init="setTimeout(() => show = false, 4000)" x-show="show">
+        <div x-data="{ show: true }" x-init="setTimeout(() => show = false, 2000)" x-show="show" class="FlashMessage Container">
             <p>{{ session('success') }}</p>
         </div>
     @endif

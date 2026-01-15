@@ -4,17 +4,21 @@
     <p class="BackButton"><a href="/blog" class="Container">Go Back</a></p>
     <div>
         <h1 class="PageTitle"><?= $post->title ?></h1>
-        <h2 class="PageSubtitle">By <?= $post->user->name ?> in <?= $post->category->name ?></h2>
-        <div class="Container PostImage">
-            @if ($post->thumbnail)
-                <img src="{{ asset('storage/' . $post->thumbnail) }}" />
-            @else
-                <img src="https://placehold.net/600x400.png" />
-            @endif
+        <h2 class="PageSubtitle">By <?= $post->user->name ?></h2>
+        <div class="SmallContent">
+            <div class="Container PostImage">
+                @if ($post->thumbnail)
+                    <img src="{{ asset('storage/' . $post->thumbnail) }}" />
+                @else
+                    <img src="https://placehold.net/600x400.png" />
+                @endif
+            </div>
+            <h2 class="PageSubtitle"><?= $post->created_at->diffForHumans() ?></h2>
+            <h2 class="PageSubtitle"><?= $post->category->name ?></h2>
+            <div class="PostBody"> {!! $post->body !!} </div>
         </div>
-        <p class="PostBody"><?= $post->body ?></p>
     </div>
-    <div>
+    <div class="CommentSection">
         @auth
             <form action="/posts/{{ $post->slug }}/comments" method="post" class="Comment CreateComment Container">
                 @csrf

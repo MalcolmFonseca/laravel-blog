@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="LandingPageContent">
-        <div>
+        <div id="LandingPageHeader">
             <h1 id="LandingPageName">Malcolm Fonseca</h1>
             <h3 class="PageSubtitle">Software Engineer</h3>
             <h3 class="PageSubtitle">Strathroy, Ontario, Canada</h3>

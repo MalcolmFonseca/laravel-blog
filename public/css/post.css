@@ -98,16 +98,45 @@
 }
 
 .PostBody {
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 25px;
+}
+
+.PostBody h1 {
+    margin-top: 0;
+}
+
+.PostBody p {
+    margin-left: 0;
+}
+
+.PostBody a {
+    color: #ce7eff;
+}
+
+.CommentSection {
+    margin-bottom: 25px;
 }
 
 .Comment {
     display: flex;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 25px;
     width: 60%;
+}
+
+.Comment p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Comment label {
+    margin-top: 15px;
 }
 
 .Comment img {
@@ -223,7 +252,6 @@
 
 .PostImage {
     margin-top: 15px;
-    margin-left: 25px;
     width: 35%;
 }
 
