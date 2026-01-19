@@ -4,19 +4,21 @@
     <p class="BackButton"><a href="/blog" class="Container">Go Back</a></p>
     <div>
         <div class="Post">
-            <div class="Container PostImage">
-                @if ($post->thumbnail)
-                    <img src="{{ asset('storage/' . $post->thumbnail) }}" />
-                @else
-                    <img src="https://placehold.net/600x400.png" />
-                @endif
-            </div>
             <div class="PostHeader">
-                <h2 class="PostCategory">{{ strtoupper($post->category->name) }}</h2>
-                <h1><?= $post->title ?></h1>
-                <h2>By <?= $post->user->name ?></h2>
-                <h2><?= $post->created_at->diffForHumans() ?></h2>
-                <p><?= $post->excerpt ?></p>
+                <div class="Container PostImage">
+                    @if ($post->thumbnail)
+                        <img src="{{ asset('storage/' . $post->thumbnail) }}" />
+                    @else
+                        <img src="https://placehold.net/600x400.png" />
+                    @endif
+                </div>
+                <div class="PostHeaderInfo">
+                    <h2 class="PostCategory">{{ strtoupper($post->category->name) }}</h2>
+                    <h1><?= $post->title ?></h1>
+                    <h2>By <?= $post->user->name ?></h2>
+                    <h2><?= $post->created_at->diffForHumans() ?></h2>
+                    <p><?= $post->excerpt ?></p>
+                </div>
             </div>
         </div>
         <div class="SmallContent">

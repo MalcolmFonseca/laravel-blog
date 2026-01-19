@@ -116,12 +116,18 @@
 
 .Post {
     display: flex;
-    width: 80%;
-    margin-left: auto;
-    margin-right:auto;
+    background-color: #9259b4;
+    margin-top: 25px;
 }
 
 .PostHeader {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PostHeaderInfo {
     display: flex;
     flex-direction: column;
     margin-left: 25px;
@@ -130,12 +136,20 @@
 }
 
 .PostHeader h1 {
-    font-size: 35px;
+    font-size: 45px;
 }
 
-.PostHeader h1, h2, p{
+.PostHeader h2 {
+    font-weight: normal;
+}
+
+.PostHeader p {
     margin: 0;
-    margin-top: 15px;
+}
+
+.PostHeader h1, h2{
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .PostBody {
@@ -301,7 +315,6 @@
 }
 
 .PostImage {
-    margin-top: 15px;
     width: 55%;
 }
 
