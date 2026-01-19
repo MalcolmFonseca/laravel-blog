@@ -1,30 +1,26 @@
 @props(['project'])
 
-<li class="Post Container">
+<li class="PostCard Container">
     @if ($project->thumbnail)
         <img src="{{ asset('storage/' . $project->thumbnail) }}" width="600" height="400" />
     @else
         <img src="https://placehold.net/600x400.png" width="600" height="400" />
     @endif
-    <div class="PostTitle">
-        <h2><?= $project->title ?></h2>
-    </div>
-    <div>
-        <div>
-            <div>{{ $project->body }}</div>
-        </div>
+    <div class="PostInfo">
         <div class="ProjectTech">
             @foreach ($project->technologies as $technology)
-                <p>{{ $technology }}</p>
+                <p>{{ ucwords($technology) }}</p>
             @endforeach
         </div>
+        <h2 class="PostTitle"><?= $project->title ?></h2>
+        <div class="PostExcerpt">{{ $project->body }}</div>
+        <hr>
         <div class="ProjectLinks">
             @foreach ($project->links as $link)
                 <a href="{{ $link['ref'] }}">{{ $link['name'] }}</a>
             @endforeach
         </div>
     </div>
-    <div><?= $project->excerpt ?></div>
     @if (request()->user()?->can('admin'))
         <div class="AdminTools">
             <a href="/admin/projects/{{ $project->id }}" class="DarkContainer">Edit</a>

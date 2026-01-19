@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-    <h1 class="PageTitle">My Projects</h1>
     <div id="BlogTitleBar">
         @if (request()->user()?->can('admin'))
             <p class="Container"><a href="/admin/projects/create">New Project</a></p>

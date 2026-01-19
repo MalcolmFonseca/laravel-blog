@@ -1,183 +1,189 @@
 * {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth !important;
-  color: #ffffff;
-  text-decoration: none;
-  list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth !important;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
-  margin: 0;
-  background-image: url("../Images/PortfoiloBackground.png");
-  background-attachment: fixed;
-  display: flex;
+    margin: 0;
+    background-image: url("../Images/PortfoiloBackground.png");
+    background-attachment: fixed;
+    display: flex;
 }
 
 p {
-  margin-left: 15px;
-  font-size: 22px;
-  width: fit-content;
+    margin-left: 15px;
+    font-size: 22px;
+    width: fit-content;
 }
 
 textarea {
-  background-color: #663e7e;
-  border: none;
+    background-color: #663e7e;
+    border: none;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .PageTitle {
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 2.5rem;
-  color: white;
+    width: fit-content;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 25px;
 }
 
 #miniWebContainer {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  width: 80%;
-  height: 70%;
-  border: solid;
-  border-color: #1c1c20;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
-  overflow: scroll;
-  border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 80%;
+    height: 70%;
+    border: solid;
+    border-color: #1c1c20;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: scroll;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .PageSubtitle {
-  text-align: center;
-  margin: 0;
+    text-align: center;
+    margin: 0;
 }
 
 #LandingPageName {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 0;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 #Socials {
-  margin-top: 10px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 1rem;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #Bio {
-  text-align: left;
-  width: 40%;
-  margin-left: 15px;
-  margin-right: 15px;
+    text-align: left;
+    width: 40%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #LandingPageContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 #LandingPageHeader {
-  background-color: rgba(0, 0, 0, 0.3);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 60px;
-  border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+    border-radius: 25px;
 }
 
 #LandingPageHeader h1 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 #About {
-  padding: 15px;
-  background-color: #9259b4;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    padding: 15px;
+    background-color: #9259b4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 @media (max-width: 1400px) {
-  #About {
-    margin-top: 5%;
-    flex-direction: column;
-  }
+    #About {
+        margin-top: 5%;
+        flex-direction: column;
+    }
 
-  #Bio {
-    text-align: center;
-    width: 80%;
-    margin-left: 0;
-  }
+    #Bio {
+        text-align: center;
+        width: 80%;
+        margin-left: 0;
+    }
 
-  .FeaturedPost {
-    width: 100%;
-  }
+    .FeaturedPost {
+        width: 100%;
+    }
 }
 
 .Dropdown {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: white;
-  width: 175px;
-  border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 175px;
+    border-radius: 20px;
 }
 
 .Dropdown a {
-  text-decoration: none;
-  color: black;
-  padding: 2%;
-  padding-left: 10%;
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    padding-left: 10%;
 }
 
 .Dropdown a:hover {
-  background-color: #9259b4;
-  border-radius: 20px;
-  color: white;
+    background-color: #9259b4;
+    border-radius: 20px;
+    color: white;
 }
 
 .BackButton {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .BackButton a{
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .BackButton a:hover{
-  background-color: #ce7eff;
+    background-color: #ce7eff;
 }
 
 .SmallContent {
-  display: grid;
-  place-items: center;
-  height: 100%;
+    display: grid;
+    place-items: center;
+    height: 100%;
 }
 
 .SmallContent .PageTitle {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .Container {
-  background-color: #9259b4;
-  padding: 15px;
-  border-radius: 25px;
-  margin: 0;
+    background-color: #9259b4;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 0;
 }
 
 .DarkContainer {
-  background-color: #663e7e;
-  padding: 15px;
-  border-radius: 25px;
+    background-color: #663e7e;
+    padding: 15px;
+    border-radius: 25px;
 }
 
 .FormTextArea {
@@ -200,5 +206,5 @@ button {
 }
 
 .FlashMessage p {
-  margin: 0;
+    margin: 0;
 }

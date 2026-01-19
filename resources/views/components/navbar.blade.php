@@ -4,29 +4,14 @@
         <h1 id="Name">Malcolm Fonseca</h1>
     </a>
     <ul id="navlinks">
-        <li>
-            <a href="/projects">Projects</a>
-        </li>
-        <li>
-            <a href="/blog">Blog</a>
-        </li>
-        <li>
-            <a href="/contact">Contact</a>
-        </li>
+        <x-nav.navitem name="projects"/>
+        <x-nav.navitem name="blog"/>
+        <x-nav.navitem name="contact"/>
         @auth
-            <li>
-                <form action="/logout" method="post">
-                    @csrf
-                    <button type="submit">Log Out</button>
-                </form>
-            </li>
+        <x-nav.navitem name="logout" form="true"/>
         @else
-            <li>
-                <a href="/register">Sign Up</a>
-            </li>
-            <li>
-                <a href="/login">Log In</a>
-            </li>
+        <x-nav.navitem name="register"/>
+        <x-nav.navitem name="login"/>
         @endauth
     </ul>
 </nav>
