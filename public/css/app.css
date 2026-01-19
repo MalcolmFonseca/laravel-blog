@@ -95,6 +95,7 @@ button {
     background-color: rgba(0, 0, 0, 0.3);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
     padding: 60px;
     border-radius: 25px;
 }
@@ -184,6 +185,12 @@ button {
     background-color: #663e7e;
     padding: 15px;
     border-radius: 25px;
+}
+
+.FormFill {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .FormTextArea {

@@ -18,7 +18,7 @@
 
 <body>
     <div>
-        <x-navbar></x-navbar>
+        <x-nav.navbar />
         <div id="miniWebContainer">
             @yield('content')
         </div>

@@ -3,16 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
 class AdminPostController extends Controller
 {
     public function index()
     {
-        return view('admin.posts.index', [
-            'posts' => Post::latest()->filter(request(['search', 'category', 'user']))->paginate(6)->withQueryString()
-        ]);
+        //much simpler to have admin tools on main view
+        return redirect('/blog');
     }
 
     public function create()

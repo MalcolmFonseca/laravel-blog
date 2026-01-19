@@ -77,3 +77,18 @@
     background-color: inherit;
     border: none;
 }
+
+@media (max-width: 1400px) {
+    #navlinks {
+        gap: 0;
+    }
+
+    #nav h1 {
+        display: none;
+        visibility: hidden;
+    }
+
+    #nav li {
+        font-size: 20px;
+    }
+}
