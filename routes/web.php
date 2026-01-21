@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPostController;
+use App\Http\Controllers\AdminProjectController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsletterController;
@@ -38,4 +39,15 @@ Route::middleware('can:admin')->group(function () {
     Route::get('admin/posts/{post}', [AdminPostController::class, 'edit']);
     Route::patch('admin/posts/{post}', [AdminPostController::class, 'update']);
     Route::delete('admin/posts/{post}', [AdminPostController::class, 'destroy']);
+
+    Route::get('admin/projects', [AdminProjectController::class, 'index']);
+    Route::get('admin/projects/create', [AdminProjectController::class, 'create']);
+    Route::post('admin/projects', [AdminProjectController::class, 'store']);
+    Route::get('admin/projects/{project}', [AdminProjectController::class, 'edit']);
+    Route::patch('admin/projects/{project}', [AdminProjectController::class, 'update']);
+    Route::delete('admin/projects/{project}', [AdminProjectController::class, 'destroy']);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
