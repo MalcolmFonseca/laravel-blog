@@ -47,7 +47,3 @@ Route::middleware('can:admin')->group(function () {
     Route::patch('admin/projects/{project}', [AdminProjectController::class, 'update']);
     Route::delete('admin/projects/{project}', [AdminProjectController::class, 'destroy']);
 });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
