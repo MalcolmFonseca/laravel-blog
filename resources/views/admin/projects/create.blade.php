@@ -19,10 +19,7 @@
         </div>
 
         <div class="Row">
-            @php
-                $inputnum = 1;
-            @endphp
-            <x-form.paired-input name='links' inputnum='{{ $inputnum }}' />
+            <x-form.paired-input name='links' />
         </div>
 
 

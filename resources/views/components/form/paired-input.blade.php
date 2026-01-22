@@ -1,12 +1,16 @@
-@props(['name', 'class' => 'Column', 'required' => true, 'inputnum'])
+@props(['name', 'class' => 'Column', 'required' => true])
 
-<div class="{{ $class }}">
+<div class="{{ $class }}" x-data="{ inputNum: 1, add() { this.inputNum += 1 }, remove() { this.inputNum = this.inputNum - 1 }, }">
     <x-form.label name='{{ $name }}' />
-    @for ($i = 0; $i < $inputnum; $i++)
+    <template x-for="input in inputNum">
         <div class="Row">
-            <input name="{{ $name . '[]' }}" value="">
-            <input name="{{ $name . '[]' }}" value="">
+            <input name="{{ $name . '[]' }}">
+            <input name="{{ $name . '[]' }}">
         </div>
-    @endfor
+    </template>
+    <div class="Row">
+        <button class="SubmitButton" type="button" @click="add">+</button>
+        <button class="SubmitButton" type="button" @click="remove">-</button>
+    </div>
     <x-form.error name="{{ $name }}" />
 </div>
