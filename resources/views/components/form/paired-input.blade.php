@@ -1,6 +1,6 @@
-@props(['name', 'class' => 'Column', 'required' => true])
+@props(['name', 'class' => 'Column', 'required' => true, 'inputNum' => 1])
 
-<div class="{{ $class }}" x-data="{ inputNum: 1, add() { this.inputNum += 1 }, remove() { this.inputNum = this.inputNum - 1 }, }">
+<div class="{{ $class }}" x-data="{ inputNum: {{ $inputNum }}, add() { this.inputNum += 1 }, remove() { this.inputNum = this.inputNum - 1 }, }">
     <x-form.label name='{{ $name }}' />
     <template x-for="input in inputNum">
         <div class="Row">

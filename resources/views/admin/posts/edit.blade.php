@@ -2,6 +2,7 @@
 
 @section('content')
     <div>
+        <x-back-button />
         <form action="/admin/posts/{{ $post->id }}" method="POST" id='Form' class="Container"
             enctype="multipart/form-data">
             @csrf

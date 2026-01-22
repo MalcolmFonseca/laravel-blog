@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <p class="BackButton"><a href="/blog" class="Container">Go Back</a></p>
+    <x-back-button />
     <div>
         <div class="Post">
             <div class="PostHeader">

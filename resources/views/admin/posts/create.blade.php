@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+    <x-back-button />
     <h1 class="PageTitle">Create New Post</h1>
     <form action="/admin/posts" method="POST" id='Form' class="Container" enctype="multipart/form-data">
         @csrf

@@ -24,6 +24,7 @@ class Project extends Model
                 fn($query) =>
                 $query->where('title', 'like', '%' . $search . '%')
                     ->orWhere('body', 'like', '%' . $search . '%')
+                    ->orWhere('technologies', 'like', '%' . $search . '%')
             )
         );
     }

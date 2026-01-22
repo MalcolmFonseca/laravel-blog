@@ -17,7 +17,7 @@
         <hr>
         <div class="ProjectLinks">
             @foreach ($project->links as $link)
-                <a href="{{ $link['ref'] }}">{{ $link['name'] }}</a>
+                <a href="{{ $link['ref'] }}" target="_blank">{{ $link['name'] }}</a>
             @endforeach
         </div>
     </div>
