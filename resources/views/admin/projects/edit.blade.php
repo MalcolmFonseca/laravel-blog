@@ -20,15 +20,15 @@
                 {{-- have to convert here, won't let me inline --}}
                 @php
                     $techString = implode(',', $project->technologies);
+                    $linksString = json_encode($project->links);
                 @endphp
                 <x-form.input name='technologies' :value="old('technologies', $techString)" />
                 <x-form.input name='thumbnail' type='file' required='false' />
             </div>
 
             <div class="Row">
-                <x-form.paired-input name='links' />
+                <x-form.paired-input name='links' :data="$project->links" />
             </div>
-
 
             <button type="submit" class="SubmitButton">Publish</button>
         </form>
