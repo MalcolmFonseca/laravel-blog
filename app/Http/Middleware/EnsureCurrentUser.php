@@ -16,7 +16,7 @@ class EnsureCurrentUser
     public function handle(Request $request, Closure $next): Response
     {
         //remove path and leave just slug to compare
-        $slug = str_replace('profile/', '', request()->path());
+        $slug = str_replace(['profile/', 'edit/'], '', request()->path());
         if (request()->user()->id != $slug) {
             return redirect('/');
         }

@@ -30,7 +30,7 @@
             <form action="/posts/{{ $post->slug }}/comments" method="post" class="Comment CreateComment Container">
                 @csrf
                 <div>
-                    <img src="https://i.pravatar.cc/50" alt="">
+                    <x-profile-image image="{{ request()->user()->profile_image }}" name="{{ request()->user()->name }}" />
                     <p>Leave a Comment:</p>
                 </div>
                 <x-form.textarea name="body" rows="3" />

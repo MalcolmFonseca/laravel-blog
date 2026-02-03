@@ -35,6 +35,9 @@ Route::post('/logout', [SessionsController::class, 'destroy'])->middleware('auth
 Route::post('/newsletter', NewsletterController::class);
 
 Route::get('/profile/{user:id}', [UserController::class, 'show'])->middleware(['currentuser', 'auth']);
+Route::get('/profile/edit/{user:id}', [UserController::class, 'edit'])->middleware(['currentuser', 'auth']);
+Route::patch('/profile/edit/{user:id}', [UserController::class, 'update'])->middleware(['currentuser', 'auth']);
+
 
 Route::middleware('can:admin')->group(function () {
     Route::get('admin/posts', [AdminPostController::class, 'index']);

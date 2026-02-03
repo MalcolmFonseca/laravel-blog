@@ -1,9 +1,7 @@
 @props(['comment'])
 
 <article class="Comment Container">
-    <div>
-        <img src="https://i.pravatar.cc/50" alt="">
-    </div>
+    <x-profile-image image="{{ $comment->user->profile_image }}" name="{{ $comment->user->name }}" />
     <div>
         <header>
             <h3 class="CommentAuthor">{{ $comment->user->username }}</h3>

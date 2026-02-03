@@ -199,8 +199,11 @@
     margin-top: 15px;
 }
 
-.Comment img {
+.ProfileImage {
+    height: 50px;
+    width: 50px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .Comment header {
