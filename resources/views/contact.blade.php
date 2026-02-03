@@ -2,7 +2,7 @@
 
 @section('content')
     <main class="SmallContent">
-        <div>
+        <div class>
             <h1 class="PageTitle">Contact Me</h1>
             <form method="POST" action="/contact" id="Form" class="Container">
                 @csrf
