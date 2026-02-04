@@ -5,7 +5,7 @@
     <div>
         <header>
             <h3 class="CommentAuthor">{{ $comment->user->username }}</h3>
-            <p class="CommentTime">Posted <time>{{ $comment->created_at->diffForHumans() }}</time></p>
+            <p class="CommentTime"><time>{{ $comment->created_at->diffForHumans() }}</time></p>
         </header>
         <p class="CommentContents">{{ $comment->body }}</p>
     </div>

@@ -8,6 +8,7 @@
         <x-nav.navitem name="blog" />
         <x-nav.navitem name="contact" />
         @auth
+            <x-nav.navitem name="profile" link_args="/{{ request()->user()->id }}" />
             <x-nav.navitem name="logout" form="true" />
         @else
             <x-nav.navitem name="register" />
