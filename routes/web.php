@@ -22,6 +22,7 @@ Route::post('/contact', [ContactController::class, 'store']);
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/posts/{post:slug}', [PostController::class, 'show'])->name('post');
 Route::post('/posts/{post:slug}/comments', [PostCommentsController::class, 'store'])->middleware('auth');
+Route::delete('/posts/{post:slug}/comments/{comment}', [PostCommentsController::class, 'destroy'])->middleware(['currentuser' . ':Comment', 'auth']);
 
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
 
@@ -34,10 +35,9 @@ Route::post('/logout', [SessionsController::class, 'destroy'])->middleware('auth
 
 Route::post('/newsletter', NewsletterController::class);
 
-Route::get('/profile/{user:id}', [UserController::class, 'show'])->middleware(['currentuser', 'auth']);
-Route::get('/profile/edit/{user:id}', [UserController::class, 'edit'])->middleware(['currentuser', 'auth']);
-Route::patch('/profile/edit/{user:id}', [UserController::class, 'update'])->middleware(['currentuser', 'auth']);
-
+Route::get('/profile/{user}', [UserController::class, 'show'])->middleware(['currentuser', 'auth']);
+Route::get('/profile/edit/{user}', [UserController::class, 'edit'])->middleware(['currentuser', 'auth']);
+Route::patch('/profile/edit/{user}', [UserController::class, 'update'])->middleware(['currentuser', 'auth']);
 
 Route::middleware('can:admin')->group(function () {
     Route::get('admin/posts', [AdminPostController::class, 'index']);

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use App\Models\Post;
-use Illuminate\Http\Request;
 
 class PostCommentsController extends Controller
 {
@@ -19,5 +19,12 @@ class PostCommentsController extends Controller
         ]);
 
         return back();
+    }
+
+    public function destroy(Post $post, Comment $comment)
+    {
+        $comment->delete();
+
+        return back()->with('success', 'Comment Deleted!');
     }
 }
