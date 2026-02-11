@@ -43,7 +43,7 @@ class AdminProjectController extends Controller
 
         $project->update($attributes);
 
-        return back()->with('success', 'Project Updated!');
+        return redirect('/projects')->with('success', 'Project Updated!');
     }
 
     public function destroy(Project $project)

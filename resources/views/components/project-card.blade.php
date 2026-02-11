@@ -23,11 +23,11 @@
     </div>
     @if (request()->user()?->can('admin'))
         <div class="AdminTools">
-            <a href="/admin/projects/{{ $project->id }}" class="DarkContainer">Edit</a>
+            <a href="/admin/projects/{{ $project->id }}" class="Button">Edit</a>
             <form action="/admin/projects/{{ $project->id }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button type="submit" class="DarkContainer">Delete</button>
+                <x-form.delete-button />
             </form>
         </div>
     @endif

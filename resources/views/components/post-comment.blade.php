@@ -10,7 +10,7 @@
                 <form action="{{ Request::getPathInfo() . '/comments/' . $comment->id }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="">🗑️</button>
+                    <x-form.delete-button />
                 </form>
             @endif
         </header>

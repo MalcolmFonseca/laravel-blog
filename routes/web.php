@@ -59,4 +59,9 @@ Route::middleware('can:admin')->group(function () {
     Route::delete('admin/projects/{project}', [AdminProjectController::class, 'destroy']);
 
     Route::get('admin/categories', [AdminCategoryController::class, 'index']);
+    Route::get('admin/categories/create', [AdminCategoryController::class, 'create']);
+    Route::post('admin/categories', [AdminCategoryController::class, 'store']);
+    Route::get('admin/categories/{category}', [AdminCategoryController::class, 'edit']);
+    Route::patch('admin/categories/{category}', [AdminCategoryController::class, 'update']);
+    Route::delete('admin/categories/{category}', [AdminCategoryController::class, 'destroy']);
 });

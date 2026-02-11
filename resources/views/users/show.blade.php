@@ -12,16 +12,16 @@
             <h2>Email</h2>
             <p>{{ $user->email }}</p>
             <div class="AdminTools">
-                <a href="/profile/edit/{{ $user->id }}" class="DarkContainer">Edit Info</a>
-                <a class="DarkContainer">Change Password</a>
-                <button @click="show = true" class="DarkContainer" type="button">Delete Account</button>
+                <a href="/profile/edit/{{ $user->id }}" class="Button">Edit Info</a>
+                <a class="Button">Change Password</a>
+                <button @click="show = true" class="Button" type="button">Delete Account</button>
             </div>
             <div x-show="show" @click.away="show = false" class="ConfirmMessage Container">
                 <p>Are you Sure?</p>
                 <form action="/profile/{{ $user->id }}" method="POST" class="">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="DarkContainer">Confirm Delete Account</button>
+                    <button type="submit" class="Button">Confirm Delete Account</button>
                 </form>
             </div>
         </div>

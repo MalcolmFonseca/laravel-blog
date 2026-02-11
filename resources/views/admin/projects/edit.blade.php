@@ -30,7 +30,7 @@
                 <x-form.paired-input name='links' :data="$project->links" />
             </div>
 
-            <button type="submit" class="SubmitButton">Publish</button>
+            <button type="submit" class="SubmitButton">Update</button>
         </form>
     </div>
 @endsection

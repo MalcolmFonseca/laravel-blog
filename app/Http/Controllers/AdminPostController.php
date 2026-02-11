@@ -44,7 +44,7 @@ class AdminPostController extends Controller
 
         $post->update($attributes);
 
-        return back()->with('success', 'Post Updated!');
+        return redirect('/blog')->with('success', 'Post Updated!');
     }
 
     public function destroy(Post $post)

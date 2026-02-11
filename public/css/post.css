@@ -335,9 +335,38 @@
     flex-direction: row;
     justify-content: space-between;
     font-size: 22px;
+    gap: 15px;
 }
 
 .AdminTools Button {
     font-size: 22px;
     border: none;
+}
+
+.CategoryCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.CategoryCard div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.CategoryCard p {
+    margin: 0;
+}
+
+.AddCategory {
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-size: inherit;
+}
+
+.AddCategory:hover {
+    background-color: #ce7eff;
 }
