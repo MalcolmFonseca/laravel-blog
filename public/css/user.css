@@ -45,3 +45,17 @@
     justify-content: space-between;
 }
 
+.ConfirmMessage {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px;
+}
+
+.ConfirmMessage Button {
+    font-size: 22px;
+    border: none;
+}

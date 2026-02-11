@@ -2,7 +2,7 @@
 
 @section('content')
     <main class="SmallContent">
-        <div class="Container">
+        <div class="Container" x-data="{ show: false }">
             <h2>Profile Image</h2>
             <x-profile-image image="{{ $user->profile_image }}" name="{{ $user->name }}" />
             <h2>Name</h2>
@@ -12,9 +12,17 @@
             <h2>Email</h2>
             <p>{{ $user->email }}</p>
             <div class="AdminTools">
-                <a href="/profile/edit/{{ $user->id }}" class="DarkContainer" type="button">Edit Info</a>
-                <a class="DarkContainer" type="button">Change Password</a>
-                <a class="DarkContainer" type="button">Delete Account</a>
+                <a href="/profile/edit/{{ $user->id }}" class="DarkContainer">Edit Info</a>
+                <a class="DarkContainer">Change Password</a>
+                <button @click="show = true" class="DarkContainer" type="button">Delete Account</button>
+            </div>
+            <div x-show="show" @click.away="show = false" class="ConfirmMessage Container">
+                <p>Are you Sure?</p>
+                <form action="/profile/{{ $user->id }}" method="POST" class="">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="DarkContainer">Confirm Delete Account</button>
+                </form>
             </div>
         </div>
     </main>

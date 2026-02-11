@@ -38,4 +38,11 @@ class UserController extends Controller
 
         return back()->with('success', 'Profile Info Updates!');
     }
+
+    public function destroy(User $user)
+    {
+        $user->delete();
+
+        return redirect('/')->with('success', 'Account Deleted!');
+    }
 }
