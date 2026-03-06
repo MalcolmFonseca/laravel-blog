@@ -5,15 +5,9 @@
         <div id="LandingPageHeader">
             <h1 id="LandingPageName">Malcolm Fonseca</h1>
             <h3 class="PageSubtitle">Software Engineer</h3>
+            <h3 class="PageSubtitle">Malcolmfonseca@hotmail.com</h3>
             <h3 class="PageSubtitle">Strathroy, Ontario, Canada</h3>
-            <div id="Socials">
-                <a href="https://www.linkedin.com/in/malcolmfonseca" target="_blank">
-                    <img width="30" src="/Images/LinkedIn.png" alt="Malcolm's LinkedIn"></img>
-                </a>
-                <a href="https://github.com/MalcolmFonseca" target="_blank">
-                    <img width="30" src="/Images/Github.svg" alt="Malcolm's Github"></img>
-                </a>
-            </div>
+            <x-socials />
         </div>
         <div id="About">
             <p id="Bio">

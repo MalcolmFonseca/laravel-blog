@@ -307,6 +307,7 @@
 .FeaturedPost img {
     border-radius: 15px;
     margin-right: 15px;
+    object-fit: cover;
 }
 
 .FeaturedPostInfo {
