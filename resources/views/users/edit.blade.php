@@ -17,8 +17,6 @@
             <x-form.input name='email' :value="old('email', $user->email)" />
         </div>
 
-        <div class="Row">
-        </div>
         <button type="submit" class="SubmitButton">Update</button>
     </form>
 @endsection

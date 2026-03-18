@@ -39,7 +39,8 @@ Route::middleware(['currentuser', 'auth'])->group(function () {
     Route::get('/profile/{user}', [UserController::class, 'show']);
     Route::get('/profile/edit/{user}', [UserController::class, 'edit']);
     Route::patch('/profile/edit/{user}', [UserController::class, 'update']);
-    Route::get('/profile/{user}/password', [UserController::class, 'showpassword']);
+    Route::get('/profile/change-password/{user}', [UserController::class, 'edit_password']);
+    Route::patch('/profile/change-password/{user}', [UserController::class, 'update_password']);
     Route::delete('/profile/{user}', [UserController::class, 'destroy']);
 });
 

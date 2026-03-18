@@ -13,7 +13,7 @@
             <p>{{ $user->email }}</p>
             <div class="AdminTools">
                 <a href="/profile/edit/{{ $user->id }}" class="Button">Edit Info</a>
-                <a class="Button">Change Password</a>
+                <a href="/profile/change-password/{{ $user->id }}" class="Button">Change Password</a>
                 <button @click="show = true" class="Button" type="button">Delete Account</button>
             </div>
             <div x-show="show" @click.away="show = false" class="ConfirmMessage Container">
